@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220526181518">
+    <title>Главная</title>
+</head>
+
+<body>
+    <div class="wrapper-body">
+        <div class="langs lock-padding">
+            <select name="langSelect" id="langSelect" class="langs__select">
+                <option value="ua" selected>UA</option>
+                <option value="en">EN</option>
+                <option value="ru">RU</option>
+            </select>
+            
+        </div>
+        <header class="header" id="header">
+    <div class="container fl-r-b header__container lock-padding">
+        <div class="fl-r-s header__logo">
+            <img src="img/logo2.webp" alt="logo" width="70" height="70">
+            <div class="header__logo-title">
+                <h3 style="text-align: center;">VLADA</h3>
+                <span class="lang-logoSubtitle">Груминг-салон</span>
+            </div>
+        </div>
+        <div class="header__menu menu">
+            <div class="menu__icon"><span></span></div>
+            <nav class="menu__body">
+                <ul class="menu__list">
+                    <li><a data-goto=".section-home" href="#" class="menu__link lang-menuHome">Главная</a></li>
+                    <li><a data-goto=".section-services" href="#" class="menu__link lang-menuService">Услуги</a></li>
+                    <li><a data-goto=".section-about" href="#" class="menu__link lang-menuAbout">О нас</a></li>
+                    <li><a data-goto=".section-clients" href="#" class="menu__link lang-menuClients">Клиенты</a></li>
+                    <li><a data-goto=".section-schedule" href="#" class="menu__link lang-menuSchedule">График работы</a></li>
+                    <li>
+                        <a data-goto=".section-contact" href="#" class="menu__link lang-menuContacts">Контакты</a>
+                        <span class="menu__arrow"></span>
+                        <ul class="menu__sub-list">
+                            <li><a href="" class="menu__sub-link">
+                                    <h5><img src="img/tel2.png" alt="icon-tel" width="15px">Vodafon:</h5>
+                                    +38(095)000-00-00
+                                </a></li>
+                            <li><a href="" class="menu__sub-link">
+                                    <h5><img src="img/tel2.png" alt="icon-tel" width="15px">Kiyvstar:</h5>
+                                    +38(098)000-00-00
+                                </a></li>
+                            <li><a href="" class="menu__sub-link">
+                                    <h5><img src="img/tel2.png" alt="icon-tel" width="15px">Lifecell:</h5>
+                                    +38(093)000-00-00
+                                </a></li>
+                            <li><a href="" class="menu__sub-link">
+                                    <h5><img src="img/email.png" alt="icon-mail"
+                                        width="20px">E-mail:</h5>
+                                    info@grooming.com
+                                </a>
+                            </li>
+                            <li><a href="" class="menu__sub-link">
+                                    <h5><img src="img/facebook.png" alt="icon-facebook"
+                                        width="25px">Facebook:</h5>
+                                    @facebook
+                                </a></li>
+                            <li><a href="" class="menu__sub-link">
+                                    <h5><img src="img/instagram.png" alt="icon-instagram"
+                                        width="25px">Instagram:</h5>
+                                    @instagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+        <main class="main">
+            <section class="section bg section-home ">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="heading">
+                            <h1 class="heading-title lang-homeTitle">Груминг-салон <span class="heading-title__logo">"VLADA"</span>
+                            </h1>
+                            <h3 class="heading-subtitle lang-homeSubtitle">Професиональный уход за собаками в Бердянске</h3>
+                            <a href="#popup" class="button popup-link lang-bookButton">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-services">
+                <div class="container">
+                    <h2 class="section-title lang-services">Наши услуги</h2>
+                    <div class="services-grid">
+                        <div class="grid-item">
+                            <div class="grid-item__img">
+                                <img src="img/grooming.webp" alt="grooming">
+                            </div>
+
+                            <div class="grid-item__content">
+                                <h3 class="service lang-dogGroomingTitle" id="service-1">Груминг собак</h3>
+                                <h4 class="subtitle lang-dogGroomingSubtitle" id="title-1">Комплексная услуга</h4>
+                                <div class="descripton lang-dogGrooming" id="description-1"><p>Груминг - это комплекс гигиенических процедур, предназначеных для ухода за шерстью животного. Он также включает манипуляции по подстриганию когтей, вычищению ушей и глаз, обработке участков в области анального отверстия и вычесыванию шерстяного покрова.</p><p>Провести груминг собаке на дому самостоятельно очень сложно, поскольку для этого требуется специальный инструмент, опыт и профессиональные умения.</p> </div>
+                                <p><a href="#popupService" class="more popup-link lang-more">Подробнее...</a></p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item__img">
+                                <img src="img/wash.webp" alt="wash">
+                            </div>
+
+                            <div class="grid-item__content">
+                                <h3 class="service lang-hygieneCareTitle" id="service-2">Гигиенический уход</h3>
+                                <h4 class="subtitle lang-hygieneCareSubtitle" id="title-2">(Мойка, сушка, чистка, стрижка)</h4>
+                                <div class="description lang-hygieneCareDescription" id="description-2"><p>Здоровье, внешний вид и хорошее самочувствие собаки зависит от того, насколько правильно ухаживает за ней ее хозяин. Важно не только подобрать питомцу сбалансированный корм и регулярно выгуливать, но и проводить ряд обязательных санитарно-гигиенических процедур. Правила ухода относятся как к породистым домашним любимцам, так и не к породистым. Какие же это процедуры?</p></div>
+                                <p><a href="#popupService" class="more popup-link lang-more"> Подробнее...</a></p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item__img">
+                                <img src="img/trimming.webp" alt="nail-clipping">
+                            </div>
+
+                            <div class="grid-item__content">
+                                <h3 class="service lang-trimmingTitle" id="service-3">Тримминг и стриппинг</h3>
+                                <h4 class="subtitle lang-trimmingSubtitle" id="title-3">(Искусственная линька)</h4>
+                                <div class="description lang-trimmingDescription" id="description-3"><p>Тримминг собак — процедура удаления отмерших волос путем выщипывания. Многие всерьез считают, что это больно и неприятно, однако на самом деле они не правы.
+
+                                    Профессиональный тримминг абсолютно безболезнен и не доставляет питомцам никаких неприятных ощущений.
+                                    Более того, привыкая, животные с удовольствием проходят эту процедуру.</p></div>
+                                    <p><a href="#popupService" class="more popup-link lang-more"> Подробнее...</a></p>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-item__img">
+                                <img src="img/cat.webp" alt="self-serve">
+                            </div>
+
+                            <div class="grid-item__content">
+                                <h3 class="service lang-groomingCatTitle" id="service-4">Груминг котов и кошек</h3>
+                                <h4 class="subtitle lang-groomingCatSubtitle" id="title-4">Гигиенические процедуры для котов и кошек</h4>
+                                <div class="description lang-groomingCatDescription" id="description-4"><p>Существует мнение, что груминг – процедура, которая необходима только породистым представителям семейства кошачьих, которые принимают участие в конкурсах и выставках. Но это, конечно, не так. Груминг – это стандартный набор процедур по уходу за животным, посещать специалиста рекомендуется всем любимцам вне зависимости от породы.</p></div>
+                                <p><a href="#popupService" class="more popup-link lang-more"> Подробнее...</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-block">
+                        <a href="#popup" class="button popup-link lang-bookButton">Записаться</a>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-about">
+                <div class="container">
+                    <div class="about-block">
+                        <div class="about-block__img">
+                            <img src="img/about.webp" alt="photo">
+                        </div>
+                        <div class="about-block__content">
+                            <h3 class="lang-aboutTitle">Привет, я Влада!</h3>
+                            <span class="lang-aboutText">Я - грумер. Я люблю свое дело, я люблю своих клиентов. А мои клиенты - это не просто Ваши питомцы, это настоящие личности! И у каждого свой характер, и к каждому нужно найти свой подход. И при этом возможность дарить своим клиентам красоту и комфорт!
+                                Важно, не только привести в порядок шерсть Вашего питомца, но и учесть его индивидуальные особенности, и Ваши пожелания. Важно подарить четвероногому другу не только внешнюю красоту, но и здоровье, и комфорт, что в немалой степени упростит жизнь и Вам.
+                                И помните: "Каждый достоин, быть красивым, даже если у него четыре лапы!"</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-clients">
+                <div class="bg">
+                    <div class="wrapper">
+                        <div class="container">
+                            <div class="clients-title__block">
+                                <h2 class="section-title lang-clientsTitle">Наши счастливые клиенты</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="slider">
+                        <!-- Slider main container -->
+                        <div class="swiper slider-image">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <img src="img/barsik.webp" alt="1-slide">
+                                    <p class="lang-reviews1">Во время стрижки кот не кричал, не нервничал, у него даже лапки не вспотели. Барсик вел себя вполне спокойно, даже иногда глазки закрывал от удовольствия, когда грумер расчесывала ему гриву. Так что процедура для кота прошла вполне себе безопасно и спокойно.</p>
+                                            <span class="reviews-author lang-reviews1Author">Елена (хозяйка Барсика)</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/2-slide.png" alt="2-slide">
+                                    <p class="lang-reviews2">Огромнейшее спасибо Владе за профессионализм и доброе сердце. Наш Догги на свой первый груминг попал в довольно запущенном состоянии. И, честно говоря, мы побаивались позволит ли он привести себя в порядок, да ещё незнакомому человеку. В итоге, он спокойно перенес все процедуры. Добрые и умелые руки грумера превратили его в живого "плюшевого мишку", при этом веселого и озорного. Всем рекомендуем!</p>
+                                            <span class="reviews-author lang-reviews2Author">Катя (хозяйка Догги)</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/joy.webp" alt="4-slide">
+                                    <p class="lang-reviews3">Хочу выразить огромную благодарность Владе, за моего красавчика Джоя! Она не только успокоила моего трусиху, но и превратила его в настоящего пуделя! Статного, ухоженного и безумно красивого!!!))) Успехов Вам!!!</p>
+                                            <span class="reviews-author lang-reviews3Author">Марк (хозяин Джоя)</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/toby.webp" alt="3-slide">
+                                    <p class="lang-reviews4">Подстригала йорка. Очень понравилось отношение мастера, видно, что работа ей не безразлична. Все, что я просила убрать, поправить было сделано на высоте. С триммингом управились даже быстрее, чем было обещано, что очень порадовало.Спасибо вам!</p>
+                                            <span class="reviews-author lang-reviews4Author">Инна Александровна (хозяйка Тоби)</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/musya.webp" alt="musya">
+                                    <p class="lang-reviews5">Сводила сегодня подстричь кошечку Мусечку, очень приятный персонал, мне очень понравилось как подстригли, кошечка теперь красивая и вкусно пахнет, спасибо мастеру Владе!</p>
+                                    <span class="reviews-author lang-reviews5Author">тетя Тоня (хозяйка Муси)</span>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="img/baron.webp" alt="6-slide">
+                                    <p class="lang-reviews6">Привела своего Барона на стрижку и ни капли не пожалела! Когда шли домой после процедур, Барон был звездой! Все хотели егопогладить и удивлялись - какая у него удивительная шерсть. Салон рекомендую!</p>
+                                    <span class="reviews-title lang-reviews6Author">Валентина Петровна (хозяйка Барона)</span>
+                                </div>
+                                
+                                ...
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need navigation buttons -->
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section bg section-schedule">
+                <div class="wrapper">
+                    <div class="container">
+                        <h2 class="section-title lang-scheduleTitle">График работы</h2>
+                        <div class="schedule-block lang-schedule">
+                            <p>Пн - Пт: 09.00 - 17.00</p>
+                            <p>Сб: 09.00 - 14.00</p>
+                            <p>Вс: выходной</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-contact">
+                <div class="container">
+                    <h2 class="item-title lang-contactTitle">Наши контакты</h2>
+                    <div class="contact-block">
+                        <div class="contact-block__item">
+                            <h4 class="lang-contactAdress">Запорожская обл., г.Бердянск, ул.Горбенко, 73</h4>
+
+                            <div class="item-content">
+
+
+                                <div class="item-content__item">
+                                    <div>
+                                        <p><img src="img/tel2.png" alt="tel" width="15">Vodafon:</p> +38 (095)
+                                        000-00-00
+                                    </div>
+                                    <div>
+                                        <p><img src="img/tel2.png" alt="tel" width="15">Kiyvstar:</p> +38 (098)
+                                        000-00-00
+                                    </div>
+                                </div>
+                                <div class="item-content__item">
+                                    <div>
+                                        <p><img src="img/tel2.png" alt="tel" width="15">Lifecell:</p> +38 (093)
+                                        000-00-00
+                                    </div>
+                                    <div>
+                                        <p><img src="img/email.png" alt="email" width="25">E-mail:</p>info@grooming.com
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-block__item">
+                            <div class="map lang-map" id="map">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+    <p class="copy">Copyright © 2022 CREATED BY U-Ra <span class="lang-footer">Все права защищены</span></p>
+</footer>
+        <div class="popup" id="popup">
+            <div class="popup__body fl-r-c" id="popupBody">
+
+                <div class="popup__content fl-r-c">
+                    <a href="#header" class="popup__close close-popup"><img src="img/close.webp" alt="icon-close"
+                            width="50"></a>
+                    <div class="content__item" id="hide-mob">
+                        <img src="img/popup.webp" alt="popup">
+                    </div>
+                    <div class="content__item">
+                        <h3 class="lang-formTitle">Запись он-лайн</h3>
+                        <!-- <span></span> -->
+                        <form action="#" class="form fl-c-c" id="form">
+
+                            <div class="input-grid">
+                                <div class="input-grid__item">
+                                    <label for="formName" class="lang-formName">Ваше имя:*</label>
+                                    <input type="text" name="name" id="formName" class="_req">
+                                </div>
+                                <div class="input-grid__item">
+                                    <label for="formTel" class="lang-formTel">Номер телефона:*</label>
+                                    <input type="tel" name="tel" id="formTel" class="_tel _req"
+                                        placeholder="+38 099 123-45-67"
+                                        pattern="\+\38\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+                                </div>
+                            </div>
+                            <div class="input-grid grid-area">
+                                <div class="input-grid__item breed">
+                                    <label for="formBreed" class="lang-formBreed">Порода животного:*</label>
+                                    <input type="text" name="breed" id="formBreed" class="_req">
+                                </div>
+                                <div class="input-grid__item service">
+                                    <label for="formService" class="lang-formService">Желаемая услуга:</label>
+                                    <select type="text" name="service" id="formService">
+                                        <option value="service-1" class="lang-formServiceGrooming" selected>Услуга №1</option>
+                                        <option value="service-2" class="lang-formServiceHygiene">Услуга №2</option>
+                                        <option value="service-3" class="lang-formServiceTrimming">Услуга №3</option>
+                                        <option value="service-4" class="lang-formServiceGroomingCat">Услуга №4</option>
+                                    </select>
+                                </div>
+                                <div class="input-grid__item date">
+                                    <label for="formDate" class="lang-formDate">Желаемая дата и время:</label>
+                                    <input type="text" name="date" id="formDate">
+                                </div>
+                            </div>
+                            <div class="input-grid__item">
+                                <label for="formMessage" class="lang-formMessage">Дополнительная информация (необязательно):</label>
+                                <textarea name="message" id="formMessage"
+                                    style="min-height: 100px;resize: vertical;height: 100px;margin-bottom: 7px; padding: 10px;"></textarea>
+                            </div>
+                            <div class="input-grid__item" style="width: 100%;">
+                                <button class="button form-btn lang-formBtn" type="submit">Отправить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup" id="popupService">
+            <div class="popup__body fl-r-c">
+
+                <div class="popup__content fl-c-b">
+                    <a href="#header" class="popup__close close-popup"><img src="img/close.webp" alt="icon-close"
+                            width="50"></a>
+                    <div class="content__item item-img" id="hide-mob">
+                        <!-- <img src="img/"> -->
+                    </div>
+                    <div class="content__item item-description">
+                        <div class="item-description__wrapper">
+                            <h3 id="dataService"></h3>
+                            <p id="dataTitle"></p>
+                            <span id="dataDesccription"></span>
+                            <!-- <span></span> -->
+                            <div class="button-block">
+                                <a href="#popup" class="button popup-link lang-bookButton">Записаться</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.min.js?_v=20220526181518"></script>
+</body>
+
+</html>
