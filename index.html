@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220526181518">
-    <title>Главная</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap&_v=20220616235642" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap&_v=20220616235642" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css?_v=20220616235642">
+    <title>101 Dalmatians</title>
 </head>
 
 <body>
@@ -20,54 +26,52 @@
         </div>
         <header class="header" id="header">
     <div class="container fl-r-b header__container lock-padding">
-        <div class="fl-r-s header__logo">
-            <img src="img/logo2.webp" alt="logo" width="70" height="70">
-            <div class="header__logo-title">
-                <h3 style="text-align: center;">VLADA</h3>
-                <span class="lang-logoSubtitle">Груминг-салон</span>
-            </div>
+        <div class="fl-r-s header__logo logo">
+            <a href="../index.html"><div class="logo__img"><img src="../img/header-logo-img.png" alt="logotype"></div></a>
+            <a href="../index.html"><div class="logo__title"><img src="../img/header-logo-title.png" alt="title"></div></a>
         </div>
         <div class="header__menu menu">
             <div class="menu__icon"><span></span></div>
             <nav class="menu__body">
                 <ul class="menu__list">
-                    <li><a data-goto=".section-home" href="#" class="menu__link lang-menuHome">Главная</a></li>
-                    <li><a data-goto=".section-services" href="#" class="menu__link lang-menuService">Услуги</a></li>
-                    <li><a data-goto=".section-about" href="#" class="menu__link lang-menuAbout">О нас</a></li>
-                    <li><a data-goto=".section-clients" href="#" class="menu__link lang-menuClients">Клиенты</a></li>
-                    <li><a data-goto=".section-schedule" href="#" class="menu__link lang-menuSchedule">График работы</a></li>
+                    <li><a href="../price.html" class="menu__link  link-hover lang-menuPrice">Цены</a></li>
+                    <li><a data-goto=".section-services" href="#" class="menu__link  link-hover lang-menuService">Услуги</a></li>
+                    <li><a data-goto=".section-about" href="#" class="menu__link  link-hover lang-menuAbout">О нас</a></li>
+                    <li><a data-goto=".section-clients" href="#" class="menu__link  link-hover lang-menuClients">Клиенты</a></li>
+                    <li><a data-goto=".section-schedule" href="#" class="menu__link  link-hover lang-menuSchedule">График работы</a></li>
                     <li>
-                        <a data-goto=".section-contact" href="#" class="menu__link lang-menuContacts">Контакты</a>
+                        <a data-goto=".section-contact" href="#" class="menu__link  link-hover lang-menuContacts">Контакты</a>
                         <span class="menu__arrow"></span>
                         <ul class="menu__sub-list">
-                            <li><a href="" class="menu__sub-link">
-                                    <h5><img src="img/tel2.png" alt="icon-tel" width="15px">Vodafon:</h5>
-                                    +38(095)000-00-00
-                                </a></li>
-                            <li><a href="" class="menu__sub-link">
-                                    <h5><img src="img/tel2.png" alt="icon-tel" width="15px">Kiyvstar:</h5>
-                                    +38(098)000-00-00
-                                </a></li>
-                            <li><a href="" class="menu__sub-link">
-                                    <h5><img src="img/tel2.png" alt="icon-tel" width="15px">Lifecell:</h5>
-                                    +38(093)000-00-00
-                                </a></li>
-                            <li><a href="" class="menu__sub-link">
-                                    <h5><img src="img/email.png" alt="icon-mail"
-                                        width="20px">E-mail:</h5>
-                                    info@grooming.com
-                                </a>
+                            <li>
+                                <img src="img/tel2.png" alt="icon-tel" width="20px"height="32px">
+                                <div>
+                                    <span>Vodafon:</span>
+                                <a href="tel:+380503391000" class="menu__sub-link link-hover">+38(050)339-1000</a>
+                                </div>
+                                
                             </li>
-                            <li><a href="" class="menu__sub-link">
-                                    <h5><img src="img/facebook.png" alt="icon-facebook"
-                                        width="25px">Facebook:</h5>
-                                    @facebook
-                                </a></li>
-                            <li><a href="" class="menu__sub-link">
-                                    <h5><img src="img/instagram.png" alt="icon-instagram"
-                                        width="25px">Instagram:</h5>
-                                    @instagram
-                                </a>
+                            <li>
+                                <img src="img/email.png" alt="icon-mail" width="25px" height="20px">
+                                <div>
+                                    <span>E-mail:</span>
+                                    <a href="mailto:gruming.if@gmail.com" class="menu__sub-link link-hover" target="_blank">gruming.if@gmail.com</a>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/facebook.png" alt="icon-facebook" width="25px" height="25px">
+                                <div>                                
+                                    <span>Facebook:</span>
+                                    <a href="https://www.facebook.com/gruming.if" class="menu__sub-link link-hover" target="_blank">@grooming.if</a>
+                                </div>
+                            </li>
+                                
+                            <li>
+                                <img src="img/instagram.png" alt="icon-instagram" width="25px" height="25px">
+                                <div>                                
+                                    <span>Instagram:</span>
+                                    <a href="https://www.instagram.com/gruming.if/" class="menu__sub-link link-hover" target="_blank">101 Dalmatians</a>
+                                </div>
                             </li>
                         </ul>
                     </li>
@@ -78,18 +82,76 @@
 </header>
         <main class="main">
             <section class="section bg section-home ">
-                <div class="wrapper">
+                <div class="wrapper wrapper-home">
                     <div class="container">
                         <div class="heading">
-                            <h1 class="heading-title lang-homeTitle">Груминг-салон <span class="heading-title__logo">"VLADA"</span>
-                            </h1>
-                            <h3 class="heading-subtitle lang-homeSubtitle">Професиональный уход за собаками в Бердянске</h3>
+                           
+                            <div class="heading__img">
+                                <img src="img/logo-img-white.png" alt="logo">
+                            </div>
+                            <div class="heading__logo">
+                                <h2 class="heading__logo-title lang-logo-title">ДАЛМАТИНЦЕВ</h2>
+                                <span class="heading__logo-subtitle lang-logo-subtitle">grooming</span>
+                            </div>
+                            <h1 class="heading-subtitle lang-homeSubtitle">Професиональный уход за собаками в Ивано-Франковске</h1>
                             <a href="#popup" class="button popup-link lang-bookButton">Записаться</a>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section section-services">
+            <section class="section section__advantage advantage">
+                <div class="slider">
+                    <div class="advantage-slider container">
+                        <!-- Slider main container -->
+                    <div class="swiper slider-advantage">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="card-advantage">
+                                    <div class="card-advantage__img"><img src="img/advantage-1.webp" alt="advantage-1"></div>
+                                    <h4 class="lang-advantageTitle">101 далматинец</h4>
+                                    <p class="lang-advantageText1"> - это мастера высокого профессионального уровня, для которых груминг – призвание</p>
+                                </div>
+                               
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-advantage">
+                                    <div class="card-advantage__img"><img src="img/advantage-2.webp" alt="advantage-1"></div>
+                                    <h4 class="lang-advantageTitle">101 далматинец</h4>
+                                    <p class="lang-advantageText2"> - это индивидуальный подход к каждому четвероногому клиенту</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                               
+                                <div class="card-advantage">
+                                    <div class="card-advantage__img"><img src="img/advantage-3.webp" alt="advantage-1"></div>
+                                    <h4 class="lang-advantageTitle">101 далматинец</h4>
+                                    <p class="lang-advantageText3"> - это стерильные инструменты и гуманное отношение мастеров к животным</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                
+                                <div class="card-advantage">
+                                    <div class="card-advantage__img"><img src="img/advantage-4.webp" alt="advantage-1"></div>
+                                    <h4 class="lang-advantageTitle">101 далматинец</h4>
+                                    <p class="lang-advantageText4"> - это специализированное, профессиональное оборудование, низкая стоимость услуг, быстрота и качество</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                
+                                <div class="card-advantage">
+                                    <div class="card-advantage__img"><img src="img/advantage-5.webp" alt="advantage-1"></div>
+                                    <h4 class="lang-advantageTitle">101 далматинец</h4>
+                                    <p class="lang-advantageText5"> - это профессиональная стрижка животных, цена которой зависит от породы и сложности</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section section-services" id="services">
                 <div class="container">
                     <h2 class="section-title lang-services">Наши услуги</h2>
                     <div class="services-grid">
@@ -150,22 +212,69 @@
                     </div>
                 </div>
             </section>
-            <section class="section section-about">
+            <section class="section section-about" id="about">
                 <div class="container">
                     <div class="about-block">
                         <div class="about-block__img">
-                            <img src="img/about.webp" alt="photo">
+                            <img src="img/Vlada-1.png" alt="photo" class="shift-img">
                         </div>
                         <div class="about-block__content">
-                            <h3 class="lang-aboutTitle">Привет, я Влада!</h3>
-                            <span class="lang-aboutText">Я - грумер. Я люблю свое дело, я люблю своих клиентов. А мои клиенты - это не просто Ваши питомцы, это настоящие личности! И у каждого свой характер, и к каждому нужно найти свой подход. И при этом возможность дарить своим клиентам красоту и комфорт!
-                                Важно, не только привести в порядок шерсть Вашего питомца, но и учесть его индивидуальные особенности, и Ваши пожелания. Важно подарить четвероногому другу не только внешнюю красоту, но и здоровье, и комфорт, что в немалой степени упростит жизнь и Вам.
-                                И помните: "Каждый достоин, быть красивым, даже если у него четыре лапы!"</span>
+                            <div class="slider">
+                                <div class="text-slider">
+                                    <!-- Slider main container -->
+                                <div class="swiper slider-text">
+                                    <!-- Additional required wrapper -->
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <h3 class="lang-aboutTitle">Мастер-грумер Влада</h3>
+                                                <span class="lang-aboutText1">Мы всегда рады видеть новых и старых друзей. Меня зовут Власть. Я грумер и хозяин груминг-сервиса для животных «101 далматинец». Для меня это не просто бизнес, а любимое дело, которое доставляет море удовольствия от общения с хвостатыми посетителями и их хозяевами. Груминг для меня не только процесс стрижки и гигиены любимцев – это творческий процесс. <br/> Почему я приглашаю вас именно в грумминг-сервис, а не просто в салон красоты для собак и кошек?</span>
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <h3 class="lang-aboutTitle">Мастер-грумер Влада</h3>
+                                                <span class="lang-aboutText2"> Потому что важно подарить четырехлапому другу не только внешнюю красоту, но и здоровье, и комфорт. Для постоянно занятых хозяев профессиональный груминг в зоосалоне – это возможность полноценно ухаживать за своей собакой или котом, не отвлекаясь от важных дел.<br/>«101 далматинец» - это не просто парикмахерская для животных, здесь любимцы получают необходимый уход, а хозяева могут приобрести товары для своих четырехлапых.</span>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="card">
+                                                <h3 class="lang-aboutTitleUl">Вам треба обрати саме “101 далматинець” якщо:</h3>
+                                                <ul>
+                                                    <li><img src="img/mark.webp" alt="check-mark" width="30px"><span class="lang-aboutLi1">Вы заботитесь об элегантной внешности своего питомца
+                                                    </span></li>
+                                                    <li><img src="img/mark.webp" alt="check-mark" width="30px"><span class="lang-aboutLi2">Вам нравится внимательное отношение к вашему четырехлапому другу
+                                                    </span></li>
+                                                    <li><img src="img/mark.webp" alt="check-mark" width="30px"><span class="lang-aboutLi3">Вы доверяете уход за своим любимцам только профессионалам</span></li>
+                                                    <li><img src="img/mark.webp" alt="check-mark" width="30px"><span class="lang-aboutLi4">Вы хотите, чтобы хвостатый любимец был здоров и красив.</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- If we need pagination -->
+                                    <div class="swiper-pagination"></div>
+        
+                                    <!-- If we need navigation buttons -->
+                                    <div class="button-prev lang-prev"><< Назад</div>
+                                    <div class="button-next lang-next">Вперед >></div>
+                                </div>
+                            </div>
+                                </div>
+                            <!-- <div class="card-1"> -->
+
+                            <!--</div> -->
+                            <!-- <div class="card-2">
+                                <h3>101 ДАЛМАТИНЕЦЬ</h3>
+                                <span> «101 далматинець» - це не просто перукарня для тварин, тут улюбленці отримують необхідний догляд, а господарі можуть придбати товари для своїх чотирилапих.</span>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section section-clients">
+            <section class="section section-clients" id="clients">
                 <div class="bg">
                     <div class="wrapper">
                         <div class="container">
@@ -174,6 +283,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="bg-dalmatians">
+                    <div class="bg-dalmatians__img"></div>
                 </div>
                 <div class="container">
                     <div class="slider">
@@ -225,7 +337,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section bg section-schedule">
+            <section class="section bg section-schedule" id="schedule">
                 <div class="wrapper">
                     <div class="container">
                         <h2 class="section-title lang-scheduleTitle">График работы</h2>
@@ -237,33 +349,31 @@
                     </div>
                 </div>
             </section>
-            <section class="section section-contact">
+            <section class="section section-contact" id="contacts">
                 <div class="container">
-                    <h2 class="item-title lang-contactTitle">Наши контакты</h2>
+                    <h2 class="section-title item-title lang-contactTitle" style="margin-bottom: 1rem;">Наши контакты</h2>
                     <div class="contact-block">
                         <div class="contact-block__item">
-                            <h4 class="lang-contactAdress">Запорожская обл., г.Бердянск, ул.Горбенко, 73</h4>
-
+                            <h4 class="lang-contactAdress">г.Ивано-Франковск, ул.Гетмана Мазепы, 20/8 (сквер Пятница)</h4>
                             <div class="item-content">
-
-
                                 <div class="item-content__item">
                                     <div>
-                                        <p><img src="img/tel2.png" alt="tel" width="15">Vodafon:</p> +38 (095)
-                                        000-00-00
+                                        <p><img src="img/tel2.png" alt="tel" width="15">Vodafon:</p>
+                                        <a href="tel:+380503391000" class=" link-hover">+38(050)339-1000</a>
                                     </div>
                                     <div>
-                                        <p><img src="img/tel2.png" alt="tel" width="15">Kiyvstar:</p> +38 (098)
-                                        000-00-00
+                                        <p><img src="img/email.png" alt="email" width="25">E-mail:</p>
+                                        <a href="mailto:gruming.if@gmail.com" class=" link-hover" target="_blank" style="display:inline-block;">gruming.if@gmail.com</a>
                                     </div>
                                 </div>
                                 <div class="item-content__item">
                                     <div>
-                                        <p><img src="img/tel2.png" alt="tel" width="15">Lifecell:</p> +38 (093)
-                                        000-00-00
+                                        <p><img src="img/facebook.png" alt="icon-facebook" width="25px" height="25px">Facebook:</p>                              
+                                        <a href="https://www.facebook.com/gruming.if" class=" link-hover" target="_blank">@grooming.if</a>
                                     </div>
                                     <div>
-                                        <p><img src="img/email.png" alt="email" width="25">E-mail:</p>info@grooming.com
+                                        <p><img src="img/instagram.png" alt="icon-instagram" width="25px" height="25px">Instagram:</p>                              
+                                        <a href="https://www.instagram.com/gruming.if/" class=" link-hover" target="_blank">101 Dalmatians</a>
                                     </div>
                                 </div>
                             </div>
@@ -363,7 +473,7 @@
             </div>
         </div>
     </div>
-    <script src="js/app.min.js?_v=20220526181518"></script>
+    <script src="js/app.min.js?_v=20220616235642"></script>
 </body>
 
 </html>
