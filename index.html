@@ -7,10 +7,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap&_v=20220617164130" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap&_v=20220617164130" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300&display=swap&_v=20220617221844" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Unna&display=swap&_v=20220617221844" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.min.css?_v=20220617164130">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220617221844">
     <title>101 Dalmatians</title>
 </head>
 
@@ -26,15 +26,21 @@
         </div>
         <header class="header" id="header">
     <div class="container fl-r-b header__container lock-padding">
-        <div class="fl-r-s header__logo logo">
-            <a href="../index.html"><div class="logo__img"><img src="img/header-logo-img.webp" alt="logotype"></div></a>
-            <a href="../index.html"><div class="logo__title"><img src="img/header-logo-title.webp" alt="title"></div></a>
-        </div>
+        
+            <div class="fl-r-s header__logo logo">
+                <div class="logo__img">
+                    <img data-goto=".section-home" class="menu__link" src="img/header-logo-img.webp" alt="logotype" style="cursor: pointer;">
+                </div>
+                <div class="logo__title">
+                    <img data-goto=".section-home" class="menu__link" src="img/header-logo-title.webp" alt="title" style="cursor: pointer;">
+                </div>
+            </div>
+        
         <div class="header__menu menu">
             <div class="menu__icon"><span></span></div>
             <nav class="menu__body">
                 <ul class="menu__list">
-                    <li><a href="#" class="menu__link  link-hover lang-menu-price">Цены</a></li>
+                    <li><a href="#popupPrice" class="menu__link popup-link  link-hover lang-menu-price">Цены</a></li>
                     <li><a data-goto=".section-services" href="#" class="menu__link  link-hover lang-menu-service">Услуги</a></li>
                     <li><a data-goto=".section-about" href="#" class="menu__link  link-hover lang-menu-about">О нас</a></li>
                     <li><a data-goto=".section-clients" href="#" class="menu__link  link-hover lang-menu-clients">Клиенты</a></li>
@@ -81,7 +87,7 @@
     </div>
 </header>
         <main class="main">
-            <section class="section bg section-home ">
+            <section class="section bg section-home home">
                 <div class="wrapper wrapper-home">
                     <div class="container">
                         <div class="heading">
@@ -461,7 +467,355 @@
                 </div>
             </div>
         </div>
-    <script src="js/app.min.js?_v=20220617164130"></script>
+        <div class="popup" id="popupPrice">
+            <div class="popup__body fl-r-c">
+
+                <div class="popup__content fl-c-b">
+                    <a href="#header" class="popup__close close-popup popup__close--stycky"><img src="img/close.webp" alt="icon-close"
+                            width="50">
+                    </a>
+                    <div class="content__item item-description">
+                        <div class="item-description__wrapper">
+                            <section class="section section__price price">
+                                <div class="bg">
+                                    <div class="wrapper">
+                                        <div class="container">
+                                            <div class="price-title__block">
+                                                <div class="price-title__img">
+                                                    <img src="img/logo-101white.webp" alt="logo">
+                                                </div>
+                                                <h2 class="section-title section-title--price lang-price-title">Цены на услуги</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="section__content-price content-price">
+                                <div class="container">
+                                    <div class="content-price__block">
+                                        <div class="content-price__list list">
+                                            <h2 class="list__title lang-price-list-title1">Полный комплекс услуг</h2>
+                                            <p class="list__subtitle lang-price-list-subtitle1">(Купание, стрижка, когти, ушки)</p>
+                                            <div class="list__item item">
+                                                <div class="item__title">
+                                                    <div class="item__title-img">
+                                                        <img src="img/small-dogs-img.webp" alt="small-dogs">
+                                                    </div>
+                                                    <h3 class="lang-price-item-title1">Малые породы</h3>
+                                                </div>	
+                                                <dl>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img ">
+                                                                <img src="img/york.webp" alt="york">
+                                                            </div>
+                                                            <span class="lang-price-item1">Йоркширский терьер</span>
+                                                        </dfn>
+                                                        <dd>330</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/pekines.webp" alt="pekines">
+                                                            </div>
+                                                            <span class="lang-price-item2">Мальтезе, Бивер-Йорк, Пекинес</span>
+                                                        </dfn>
+                                                        <dd>350-400</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/spiz-1.webp" alt="spiz">
+                                                            </div>
+                                                            <span class="lang-price-item3">Померанский Шпиц</span>
+                                                        </dfn>
+                                                        <dd>400-500</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/spiz-2.webp" alt="spiz">
+                                                            </div>
+                                                            <span class="lang-price-item4">Малый шпиц</span>
+                                                        </dfn>
+                                                        <dd>400-550</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/toy-pudel.webp" alt="toy-pudel">
+                                                            </div>
+                                                            <span class="lang-price-item5">Той пудель</span>
+                                                        </dfn>
+                                                        <dd>450-550</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/shi-tsu.webp" alt="shi-tsu">
+                                                            </div>
+                                                            <span class="lang-price-item6">Ши-тцу</span>
+                                                        </dfn>
+                                                        <dd>350-450</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/bishone-frize.webp" alt="bishone-frize">
+                                                            </div>
+                                                            <span class="lang-price-item7">Бишон фризе пет стрижка</span> 
+                                                        </dfn>
+                                                        <dd>450-550</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/bishone-frize.webp" alt="bishone-frize">
+                                                            </div>
+                                                            <span class="lang-price-item8">Бишон фризе пет стрижка ножницами</span> 
+                                                        </dfn>
+                                                        <dd></dd>
+                                                    </div>
+                                                </dl>
+                                            </div>
+                                            <div class="list__item item">
+                                                <div class="item__title">
+                                                    <div class="item__title-img">
+                                                        <img src="img/big-dog.webp" alt="big-dog">
+                                                    </div>
+                                                    <h3 class="lang-price-item-title2">Большие породы</h3>
+                                                </div>
+                                                
+                                                <dl>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/spaniel.webp" alt="spaniel">
+                                                            </div>
+                                                            <span class="lang-price-item9">Спаниель</span>
+                                                        </dfn>
+                                                        <dd>400-600</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/newfoundland.webp" alt="newfoundland">
+                                                            </div>
+                                                            <span class="lang-price-item10">Ньюфаундленд (со стрижкой)</span>
+                                                        </dfn>
+                                                        <dd>1000-1300</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/chao-chao.webp" alt="chao-chao">
+                                                            </div>
+                                                            <span class="lang-price-item11">Чау чау (со стрижкой)</span>
+                                                        </dfn>
+                                                        <dd>550-850</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/pudel-cocapu.webp" alt="pudel-cocapu">
+                                                            </div>
+                                                            <span class="lang-price-item12">Средний пудель, кокапу</span>
+                                                        </dfn>
+                                                        <dd>700-800</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/retriver.webp" alt="retriver">
+                                                            </div>
+                                                            <span class="lang-price-item13">Золотистый ретривер (со стрижкой)</span>
+                                                        </dfn>
+                                                        <dd>400-500</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/zvergshnauzer.webp" alt="zvergshnauzer">
+                                                            </div>
+                                                           <span class="lang-price-item14">Вест Хайленд уайт терьер, Цвергшнауцер</span>
+                                                        </dfn>
+                                                        <dd>500-600</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/mittelshnauzer.webp" alt="">
+                                                            </div>
+                                                            <span class="lang-price-item15">Фокстерьер, Мительшнауцер</span>
+                                                        </dfn>
+                                                        <dd>350-400</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/rbt.webp" alt="rbt">
+                                                            </div>
+                                                            <span class="lang-price-item16">Русский черный терьер</span>
+                                                        </dfn>
+                                                        <dd>400-500</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/cat-1.webp" alt="cat">
+                                                            </div>
+                                                            <span class="lang-price-item17">Кот (стрижка без купания)</span>
+                                                        </dfn>
+                                                        <dd>350-400</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/cat-2.webp" alt="cat">
+                                                            </div>
+                                                            <span class="lang-price-item18">Кот (стрижка/вычесывание с купанием)</span>
+                                                        </dfn>
+                                                        <dd>400-500</dd>
+                                                    </div>
+                                                </dl>
+                                            </div>
+                                            <h2 class="list__title lang-price-list-title2" style="padding-bottom: 0.5rem;">Гигиена</h2>
+                                            <div class="list__item item">
+                                                <dl>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/york.webp" alt="york">
+                                                            </div>
+                                                            <span class="lang-price-item1">Йоркширский терьер</span>
+                                                        </dfn>
+                                                        <dd>250</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/pekines.webp" alt="pekines">
+                                                            </div>
+                                                            <span class="lang-price-item2">Мальтезе, Бивер-Йорк, Пекинес</span>
+                                                        </dfn>
+                                                        <dd>300-350</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/spiz-1.webp" alt="spiz">
+                                                            </div>
+                                                            <span class="lang-price-item19">Шпиц</span>
+                                                        </dfn>
+                                                        <dd>350</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/bishone-frize.webp" alt="bishone-frize">
+                                                            </div>
+                                                            <span class="lang-price-item20">Бишон фризе</span>
+                                                        </dfn>
+                                                        <dd>300-400</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/mops-and-french-bulldog.webp" alt="mops-and-french-bulldog">
+                                                            </div>
+                                                            <span class="lang-price-item21">Мопс, Французский бульдог</span>
+                                                        </dfn>
+                                                        <dd>350</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="img/dalmatians-1.webp" alt="dalmatians">
+                                                            </div>
+                                                            <span class="lang-price-item22">Большие породы короткошерстные</span>
+                                                        </dfn>
+                                                        <dd>500-700</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <div class="item__img">
+                                                                <img src="./img/afgany.webp" alt="dog">
+                                                            </div>
+                                                            <span class="lang-price-item23">Большие породы длинношерстные</span>
+                                                        </dfn>
+                                                        <dd>600-1200</dd>
+                                                    </div>
+                                                </dl>
+                                            </div>
+                                            <h2 class="list__title lang-price-list-title3" style="padding-bottom: 0.5rem;">Отдельные услуги</h2>
+                                            <div class="list__item list__item--no-img item ">
+                                                <dl>
+                                                    <div>
+                                                        <dfn>								
+                                                            <span class="lang-price-item24">Когти - малые породы</span>
+                                                        </dfn>
+                                                        <dd>50</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <span class="lang-price-item25">Когти – большие породы</span>  
+                                                        </dfn>
+                                                        <dd>80</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <span class="lang-price-item26">Чистка ушек</span>
+                                                        </dfn>
+                                                        <dd>50</dd>
+                                                    </div>
+                                                    <div class="string-dark">
+                                                        <dfn>								
+                                                            <span class="lang-price-item27">Чистка параанальных желез</span>
+                                                        </dfn>
+                                                        <dd>80</dd>
+                                                    </div>
+                                                    <div>
+                                                        <dfn>								
+                                                            <span class="lang-price-item28">Вычёс колтунов 1 час</span>
+                                                        </dfn>
+                                                        <dd>200</dd>
+                                                    </div>
+                                                </dl>
+                                            </div>
+            
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="section section__memo memo">
+                                <div class="container">
+                                    <div class="memo__content">
+                                        <p class="lang-memo">*цены указаны для представителей породы стандартного размера. В случае увеличения объема работы возможно увеличение цены на 10% - 15%. Безпородные собаки тарифицируются как породы, максимально приближенные по размеру и типу шерсти.</p>
+                                    </div>
+                                </div>
+                            </section>
+                                <div class="button-block">
+                                    <a href="#popup" class="button popup-link popup-link--stycky lang-book-button">Записаться</a>
+                                </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll__up up">
+            <a data-goto=".section-home" href="#" class="up__arrow menu__link">
+                <svg class="t-cover__arrow-svg" style="fill:#1d124298;" x="0px" y="0px" width="38.417px"
+                    height="18.592px" viewBox="0 0 38.417 18.592">
+                    <g>
+                        <path
+                            d="M19.208,18.592c-0.241,0-0.483-0.087-0.673-0.261L0.327,1.74c-0.408-0.372-0.438-1.004-0.066-1.413c0.372-0.409,1.004-0.439,1.413-0.066L19.208,16.24L36.743,0.261c0.411-0.372,1.042-0.342,1.413,0.066c0.372,0.408,0.343,1.041-0.065,1.413L19.881,18.332C19.691,18.505,19.449,18.592,19.208,18.592z">
+                        </path>
+                    </g>
+                </svg>
+            </a>
+        </div>
+    <script src="js/app.min.js?_v=20220617221844"></script>
 </body>
 
 </html>
