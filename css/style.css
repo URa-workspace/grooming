@@ -143,7 +143,7 @@ main {
 }
 
 .link-hover {
-  color: rgba(31, 31, 31, 0.7176470588);
+  color: rgba(24, 24, 24, 0.7176470588);
   position: relative;
   overflow: hidden;
   -webkit-transition: all 0.8s ease;
@@ -746,8 +746,8 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 .content-price .list .item__img {
-  width: 150px;
-  height: 75px;
+  width: 100px;
+  height: 50px;
 }
 
 .content-price .list .item dl div {
@@ -1043,13 +1043,11 @@ body._touch .menu__list > li._active .menu__arrow {
   left: 150%;
 }
 
-.no-webp .section-about{
-  background: url(../img/bg-dalmatian-2.png) repeat-x; }
-
 .section-about {
   padding-bottom: 5rem;
   padding-top: 3rem;
-  background-position: bottom;
+  background: url("../img/bg-dalmatian-2.webp") repeat-x;
+  background-position: bottom !important;
 }
 
 .section-about .about-block {
@@ -1139,15 +1137,13 @@ body._touch .menu__list > li._active .menu__arrow {
   width: 100%;
 }
 
-.no-webp .section-clients .bg-dalmatians__img{
-  background: url(../img/bg-dalmatian-2.png) repeat-x; }
-
 .section-clients .bg-dalmatians__img {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 41vh;
+  background: url("../img/bg-dalmatian-2.webp") repeat-x;
 }
 
 .section-clients .clients-title__block {
@@ -1728,7 +1724,3 @@ body._touch .menu__list > li._active .menu__arrow {
     font-size: 0.8rem;
   }
 }
-
-.webp .section-about{ background: url(../img/bg-dalmatian-2.webp) repeat-x; }
-
-.webp .section-clients .bg-dalmatians__img{ background: url(../img/bg-dalmatian-2.webp) repeat-x; }
