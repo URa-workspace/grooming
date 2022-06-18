@@ -496,7 +496,7 @@ body._touch .menu__list > li._active .menu__arrow {
   color: rgba(0, 0, 0, 0.9607843137);
   font-size: 80px;
   text-shadow: 0 0 5px #fff;
-  top: 100% !important;
+  top: 50%;
   -webkit-transform: translate(0, -50%);
       -ms-transform: translate(0, -50%);
           transform: translate(0, -50%);
@@ -1157,8 +1157,8 @@ body._touch .menu__list > li._active .menu__arrow {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
   height: 41vh;
+  width: 100%;
   background: url("../img/bg-dalmatian-2.webp") repeat-x;
 }
 
@@ -1197,12 +1197,63 @@ body._touch .menu__list > li._active .menu__arrow {
   text-align: center;
 }
 
+.anime {
+  height: 150px;
+  overflow: hidden;
+}
+
+.anime img {
+  position: relative;
+  left: -5%;
+  top: 0;
+  height: 150px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -webkit-animation-name: run;
+          animation-name: run;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation: run 5s linear infinite;
+          animation: run 5s linear infinite;
+}
+
+.anime img:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  border-left: 2px solid rgb(159, 222, 240);
+}
+
+@-webkit-keyframes run {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes run {
+  0% {
+    left: 0%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
 .section-contact {
-  padding: 5rem 0 2rem;
+  padding: 0 0 2rem;
+  background-position: top;
+  background-size: 11rem;
 }
 
 .section-contact .item-title {
-  text-align: center;
+  text-align: center !important;
+  margin-top: 0 !important;
 }
 
 .section-contact .contact-block {
@@ -1365,6 +1416,11 @@ body._touch .menu__list > li._active .menu__arrow {
 }
 
 @media screen and (min-width: 768px) {
+  .anime img {
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+  }
+
   html {
     font-size: 24px;
   }
@@ -1381,6 +1437,13 @@ body._touch .menu__list > li._active .menu__arrow {
     -ms-grid-rows: 1fr;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template: 1fr/1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .anime img {
+    -webkit-animation-duration: 6s;
+            animation-duration: 6s;
   }
 }
 
@@ -1648,6 +1711,13 @@ body._touch .menu__list > li._active .menu__arrow {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .anime img {
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+  }
+}
+
 @media screen and (max-width: 767px) {
   #hide-mob {
     display: none !important;
@@ -1812,6 +1882,13 @@ body._touch .menu__list > li._active .menu__arrow {
 
   .contact-block__item .item-content__item div {
     font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    top: 100% !important;
   }
 }
 
